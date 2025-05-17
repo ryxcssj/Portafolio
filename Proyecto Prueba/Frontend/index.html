@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Bento Grid</title>
+    <link rel="stylesheet" href="Assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Mi Portafolio</h1>
+        <p>Desarrollador Web & Diseñador UX/UI</p>
+    </header>
+
+    <div class="bento-grid">
+        <!-- Proyecto 1 -->
+        <div class="bento-item item-1" onclick="openModal('proyecto1')">
+            <h3>Landing Page</h3>
+            <p>Diseño responsive</p>
+        </div>
+        
+        <!-- Proyecto 2 -->
+        <div class="bento-item item-2" onclick="openModal('proyecto2')">
+            <h3>App Móvil</h3>
+            <p>React Native</p>
+        </div>
+        
+        <!-- Proyecto 3 -->
+        <div class="bento-item item-3" onclick="openModal('proyecto3')">
+            <h3>E-commerce</h3>
+            <p>Tienda online</p>
+        </div>
+        
+        <!-- Proyecto 4 -->
+        <div class="bento-item item-4" onclick="openModal('proyecto4')">
+            <h3>Dashboard</h3>
+            <p>Data Visualization</p>
+        </div>
+        
+        <!-- Proyecto 5 -->
+        <div class="bento-item item-5" onclick="openModal('proyecto5')">
+            <h3>Branding</h3>
+            <p>Identidad visual</p>
+        </div>
+    </div>
+
+    <!-- Modal (hidden by default) -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title">Título del Proyecto</h2>
+            <p id="modal-description">Descripción detallada...</p>
+            <img id="modal-image" src="" alt="Proyecto">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
